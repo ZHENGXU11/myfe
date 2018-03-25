@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>和老师学着做一个</title>
+    <style>
+        .aa,p{
+            background: red;
+        }
+        #div1+p{
+            background: green;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: yellow;
+        }
+        #div5{
+            width:80px;
+            height: 40px;
+            background: pink;
+        }
+        #div5::first-line{
+            color:red;
+        }
+        #div6::after{
+            content: '？';
+            color: #336666;
+        }
+        #div6::before{
+            content: '★';
+            color:red;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="div1">
+        hahah
+    </div>
+    <p>abcd</p>
+    <div id="div2">
+        efgh
+    </div>
+    <ul>
+        <li>001</li>
+        <li class="aa">001</li>
+        <li class="aa">002</li>
+        <li>004</li>
+    </ul>
+    <span>ijkl</span>
+    <div>
+        <span>mnop</span>
+    </div>
+    <div>
+        <p>
+            <span>qrst</span>
+        </p>
+    </div>
+    <a href="#">click me</a>
+    <div id="div5">
+        uvwxyz
+        <dr>
+            UVWXYZ
+        </dr>
+    </div>
+    <div id="div6">
+    最后一条怎么不好使了呢
+    </div>
+</body>
+</html>

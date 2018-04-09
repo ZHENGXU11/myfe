@@ -21,6 +21,7 @@ a{
         background: #f2f2f2;
         border-bottom: 1px solid #e5e5e5;
         line-height: 32px;
+        font-family:"Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
     }
     .nav-box.nav-menu{
         height: 32px;
@@ -64,6 +65,9 @@ a{
     .sn-menu:hover .sub-sn-menu{
         display: block;
     }
+.sn-menu:hover .sub-sn-menu2{
+    display: block;
+}
     .nav-link:hover{
          color: #ff0036;
      }
@@ -100,6 +104,17 @@ a{
         padding: 10px 8px;
         position: absolute;
         left: -1px;
+        top: 33px;
+        width: 74px;
+        display: none;
+    }
+    .sub-sn-menu2{
+        background: #fff;
+        border: 1px solid #eee;
+        border-top: none;
+        padding: 10px 8px;
+        position: absolute;
+        right: -1px;
         top: 33px;
         width: 74px;
         display: none;

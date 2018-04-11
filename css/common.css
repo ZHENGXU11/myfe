@@ -58,6 +58,9 @@ a{
     .sn-menu{
         position: relative;
     }
+    .sn-menu2{
+        position: relative;
+    }
     .sn-menu:hover{
         background: #fff;
         height: 33px;
@@ -65,9 +68,9 @@ a{
     .sn-menu:hover .sub-sn-menu{
         display: block;
     }
-.sn-menu:hover .sub-sn-menu2{
-    display: block;
-}
+    .sn-menu:hover .sub-sn-menu2{
+        display: block;
+    }
     .nav-link:hover{
          color: #ff0036;
      }
@@ -118,6 +121,20 @@ a{
         top: 33px;
         width: 74px;
         display: none;
+    }
+    .sn-menu2 img{
+        display: none;
+        background: #fff;
+        border: 1px solid #eee;
+        border-top: none;
+        padding: 10px 8px;
+        position: absolute;
+        top: 33px;
+        width: 175px;
+        height:auto;
+    }
+    .sn-menu2:hover img{
+        display:block;
     }
     .sub-menu-item{
         line-height: 18px;

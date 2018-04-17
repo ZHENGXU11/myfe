@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        // function IsLeapYear(year) {
+        //     return year%4==0 &&year%100!=0 ||year%400==0;
+        // }
+        // var date=new Date();
+        // var year=date.getFullYear();
+        // if(IsLeapYear(year)){
+        //     document.write(year+"年是闰年")
+        // }else{
+        //     document.write(year+"年不是闰年")
+        // }
+
+
+        // var age=window.prompt('请输入年龄：','')
+        // if(age<14){
+        //     document.write('儿童');
+        // }else if(age<24){
+        //     document.write('青少年');
+        // }else if(age<40){
+        //     document.write('青年');
+        // }else if(age<60){
+        //     document.write('中年');
+        // }else if(age>=60){
+        //     document.write('老年');
+        // }
+
+        // var num=window.prompt("请输入0-6数字")
+        // num=num*1;
+        // switch (num){
+        //     case 0:
+        //         alert('星期日');
+        //         break;
+        //     case 1:
+        //         alert('星期一');
+        //         break;
+        //     case 2:
+        //         alert('星期二');
+        //         break;
+        //     case 3:
+        //         alert('星期三');
+        //         break;
+        //     case 4:
+        //         alert('星期四');
+        //         break;
+        //     case 5:
+        //         alert('星期五');
+        //         break
+        //     case 6:
+        //         alert('星期六');
+        //         break;
+        // }
+
+
+        // 介乘
+
+        // var sum=1;
+        // for(var i=1;i<=10;i++){
+        //     sum=sum*i
+        // }
+        //     console.log(sum);
+        //
+
+
+        // function f(n) {
+        //     var result=1;
+        //     for(var i=1;i<=n;i++){
+        //         result *=i;
+        //     }
+        //     return result
+        // }
+        // var a=f(10);
+        // console.log(a)
+
+
+
+        // 1!+2!+3!+4!+5!+6!+7!+8!+9!+10!
+
+        //
+        // var a,b,c;
+        // a=0;
+        // b=1;
+        // for(c=1;c<=10;c++){
+        //         b=b*c;
+        //         a=a+b;
+        // }
+        //
+        // alert('1!+2!+3!+4!+5!+6!+7!+8!+9!+10!='+a);
+
+        //
+        //
+
+        // for (var i=1;i<=5;i++){
+        //     for(var j=1;j<=i;j++){
+        //         document.write(j+'&nbsp');
+        //     }
+        //     document.write('<br/>')
+        // }
+
+
+        // for(var i=1;i<=5;i++){
+        //     for(var j=1;j<=5-i;j++){
+        //         document.write('&nbsp');
+        //     }
+        //     for(var k=1;k<=i;k++){
+        //         document.write('*&nbsp');
+        //     }
+        //     document.write('<br/>')
+        // }
+
+
+        // for(var i=1000;i<=9999;i++){
+        //     var A=Math.floor(i/1000), B=Math.floor(i%1000/100), C=Math.floor(i%100/10);
+        //     if(i%13==0 && (A==B+C)){
+        //         document.write(i+',')
+        //     }
+        // }
+
+
+        // 1. 编写一个函数 f(x) = 4x2+3x+2，使用户通过提示对话框瑜入x的值，能得到相应的计算结果。
+
+        // function f(x) {
+        //     return 4*Math.pow(x,2)+3*x+2
+        //
+        // }
+        // console.prompt
+
+
+
+        // 编写一个函数Min(x,y)求出x,y这两个数中的最小值，要求x,y的值由用户通过提示对话框输入。
+
+        // var count=0;
+        // for(var i=1;i<=1000;i++){
+        //     if(i%3==0&&i%5==0&&i%7==0){
+        //         document.write(i+',');
+        //         count++;
+        //         if(count%6==0){
+        //             document.write('<br/>')
+        //         }
+        //     }
+        // }
+
+        // 4.在页面上编程输出100~1000之间的所有素数，并要求每行显示6个素数。
+
+        // function isPrime(n) {
+        //     for (i=2;i<n;i++){
+        //         if(n%i==0){
+        //             return false;
+        //         }
+        //     }
+        //     return true
+        // }
+        //
+        // var count=0;
+        // for(var j=100;j<=1000;j++){
+        //
+        //     if(isPrime(j)){
+        //         document.write(j+'&nbsp');
+        //         count++;
+        //         if(count%6==0){
+        //             document.write('<br/>');
+        //         }
+        //     }
+        // }
+
+
+
+        // 7.斐波纳契（Fibonacci）数列的第一项是1，第二项是1，以后各项都是前两项的和。试用递归函数和非递归函数各编写一个程序，求斐波纳契数列第N项的值。
+        // function fid(n) {
+        //     if(n<=2){
+        //         return 1;
+        //     }
+        //     return fid(n-1)+fid(n-2);
+        //     // return arguments.callee(n-1)+arguments.callee(n-2);
+        // }
+        // document.write(fid(100));
+
+
+        // function fid(n) {
+        //     if(n<=2){
+        //         return 1
+        //     }
+        //     var f1=1,f2=1,temp;
+        //     for(var i=3;i<=n;i++){
+        //         temp=f1+f2;
+        //         f1=f2;
+        //         f2=temp;
+        //
+        //     }
+        //     return temp
+        // }
+        // document.write(fid(100))
+
+
+
+    </script>
+</body>
+</html>

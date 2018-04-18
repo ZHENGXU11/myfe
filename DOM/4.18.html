@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 2000px;
+        }
+        div{
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            right: 50px;
+            bottom: 20px;
+        }
+        a{
+            font-size: 12px;
+            height: 50px;
+            line-height: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <p>jiasdaskdm</p>
+    <p>jiasdaskdm</p>
+    <p>jiasdaskdm</p>
+    <p>jiasdaskdm</p>
+    <div>
+        <a  id="btn" href="javascript:;">返回顶部</a>
+    </div>
+<script>
+    // var num=0;
+    // var timer=setInterval(function () {
+    //     num++;
+    //     console.log(Math.random());
+    //     if(num==10){
+    //         clearInterval(timer);
+    //     }
+    // },1000);
+    //
+    // var timer1=setInterval(function () {
+    //     console.log("sdfs");
+    //
+    //
+    // },1000);
+    // clearInterval(timer1);
+
+
+    // 只执行一次
+    // var timer2=setTimeout(function () {
+    //     document.write("hahah")
+    //
+    // },1000);
+    // clearTimeout(timer2);
+
+
+
+
+    // 点击返回页面顶部
+    var oBtn=document.getElementById("btn");
+    oBtn.onclick=function () {
+        // window.scrollTo(0,0);
+
+
+        var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+
+        var timer=setInterval(function () {
+            scrollTop-=20;
+            window.scrollTo(0,scrollTop);
+            if (scrollTop<=0){
+                clearInterval(timer);
+            }
+        },20);
+
+    }
+
+
+
+
+</script>
+</body>
+</html>

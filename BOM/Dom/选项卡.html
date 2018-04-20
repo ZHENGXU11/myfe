@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color:cadetblue;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 500px;
+            height:500px;
+
+        }
+        .head-1{
+            background-color:pink;
+            width: 150px;
+            height: 50px;
+            float: left;
+            margin-right: 25px;
+            line-height: 50px;
+        }
+        .head-2{
+            background-color:pink;
+            width: 150px;
+            height: 50px;
+            float: left;
+            line-height: 50px;
+        }
+        p{
+            text-Align:center;
+        }
+        #con-box div{
+            background-color:#999;
+            width: 500px;
+            height: 449px;
+            border-top: 1px solid black;
+            position: absolute;
+            top: 50px;
+            display: none;
+
+        }
+        #btn-box p.btn-active{
+            background: blue;
+        }
+        #con-box div.active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="btn-box">
+            <div class="head-1"><p>111</p></div>
+            <div class="head-1"><p>222</p></div>
+            <div class="head-2"><p>333</p></div>
+        </div>
+        <div id="con-box">
+            <div class="active">aaa</div>
+            <div>bbb</div>
+            <div>ccc</div>
+        </div>
+    </div>
+        <script>
+            var oBtnBox=document.getElementById('btn-box');
+            var aBtn=oBtnBox.getElementsByTagName('p');
+            var oConBox=document.getElementById('con-box');
+            var aCon=oConBox.getElementsByTagName('div');
+            for(var i=0;i<aBtn.length;i++){
+                aBtn[i].index=i;
+                aBtn[i].onclick=function () {
+                   for (var j=0;j<aBtn.length;j++){
+                       aBtn[j].className='';
+                       aCon[j].className='';
+                   }
+                   this.className='btn-active';
+                    var index=this.index;
+                    aCon[index].className='active';
+                }
+
+
+            }
+        </script>
+</body>
+</html>

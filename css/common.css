@@ -132,6 +132,7 @@ a{
         top: 33px;
         width: 175px;
         height:auto;
+        z-index: 1;
     }
     .sn-menu2:hover img{
         display:block;

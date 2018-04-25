@@ -35,7 +35,7 @@
                 </li>
                 <li class="sn-menu2">
                     <a href="#" class="nav-link"><i class="iconfont icon-shouji nav-icon"></i>手机版</a>
-                    <img src="../images/手机二维码.png" height="215" width="175"/>
+                    <img class="erweima" src="../images/手机二维码.png" height="215" width="175"/>
                 </li>
                 <li><a href="#" class="nav-link">淘宝网</a></li>
                 <li class="sn-menu">
@@ -493,7 +493,7 @@
                                     <span>量贩装</span>
                                 </div>
                                 <div class="mart-content">
-                                    <div class="mart-content-item mart-active">
+                                    <div class="mart-content-item ">
                                         <img class="mart-item-img" src="../images/mart-img.jpg" alt=""/>
                                         <div class="mart-item-word">
                                             <p class="mart-word-title">
@@ -503,14 +503,15 @@
                                             <p class="mart-word-desc">1元超值疯抢中</p>
                                         </div>
                                     </div>
-                                    <div class="mart-content-item">
-                                        <img class="mart-item-img" src="../images/mart-img.jpg" alt=""/>
+                                    <div class="mart-content-item mart-active">
+                                        <img class="mart-item-img" src="../images/卫生纸.jpg" height="400" width="400"/>
                                         <div class="mart-item-word">
                                             <p class="mart-word-title">
                                                 <img class="mart-word-title-img" src="../images/mart-icon.png" alt=""/>
+
                                                 <span class="mart-word-title-txt">限时限量疯抢</span>
                                             </p>
-                                            <p class="mart-word-desc">1元超值疯抢中</p>
+                                            <p class="mart-word-desc">第二件半价</p>
                                         </div>
                                     </div>
                                 </div>
@@ -572,8 +573,7 @@
                 <li><a href="#">防晒</a></li>
                 <li><a href="#">迪奥</a></li>
             </ul>
-         </div>
-        <div class="tmall-HK-box">
+            <div class="tmall-HK-box">
                 <a class="HK-right" href="#">
                     <img class="tmall-HK-img-left" src="../images/spring-trend.jpg"/>
                     <div class="HK-title">
@@ -609,7 +609,7 @@
                 </a>
                 <a class="HK-right" href="#">
                     <img class="tmall-HK-img-left" src="../images/spring-trend.jpg"/>
-                    <div class="HK-title">
+                    <div class="HK-title-2">
                         春季促销
                     </div>
                 </a>
@@ -642,9 +642,11 @@
                 </a>
 
             </div>
+         </div>
+
 
             <!--立即抢购-->
-        <div class="ljq">
+        <div class="wrapper ljq">
                 <img src="../images/jack.jpg" height="90" width="1620"/>
          </div>
         <div class="wrapper mart-wrapper">
@@ -734,8 +736,14 @@
                 </div>
         </div>
             <!--last part-->
-        <div class="gues-like">
-            <h2><img src="../images/心.png" height="200" width="200"/>猜你喜欢</h2>
+        <div class="wrapper gues-like">
+            <h2>
+                <div class="text-ctn">
+
+                    <img src="../images/心.png" height="200" width="200"/> 猜你喜欢
+
+                </div>
+            </h2>
         </div>
         <div class="wrapper last-box">
             <ul class="">
@@ -943,7 +951,27 @@
         <div class="end"></div>
     </div>
 
+    <script>
+        var oMartBtns=document.getElementsByClassName('mart-btns')[0];
+        var oBtns=oMartBtns.getElementsByTagName('span');
+        var oMartContent=document.getElementsByClassName('mart-content')[0];
+        var aContent=oMartContent.getElementsByClassName('mart-content-item');
 
+        for(var i=0;i<oBtns.length;i++){
+            oBtns[i].index=i;
+            oBtns[i].onclick=function () {
+                for (var j=0;j<oBtns.length;j++){
+                    oBtns[j].className='';
+                    aContent[j].className='mart-content-item';
+                }
+                this.className='active';
+                var index=this.index;
+                aContent[index].className='mart-content-item mart-active';
+            }
+
+
+        }
+    </script>
 
 
 

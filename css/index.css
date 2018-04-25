@@ -370,7 +370,7 @@ color: #999;
     height: 618px;
 }
 .mart-item-shadow{
-    box-shadow: 0px 2px 8px 0 rgba(0,0,0,0.09) ;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.09) ;
     overflow: hidden;
 }
 .mart-btns{
@@ -388,6 +388,7 @@ color: #999;
 .mart-btns span.active{
     background: #00b262;
     color: #fff;
+
 }
 .mart-content{
     height: 225px;
@@ -518,20 +519,21 @@ color: #999;
 }
 .HK-left{
     float: left;
-    width: 235px;
+    width: 234px;
     height: 301px;
     display: block;
     margin-left: 12px;
     background-color: white;
     position: relative;
-    border-bottom: 15px solid #f5f5f5;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
 }
 .tmall-HK-box{
     overflow: hidden;
     position: relative;
 }
 .HK-title{
-    background: rgba(0,0,0,.9);
+    background: rgba(0,0,0,.7);
     width: 80px;
     height: 64px;
     overflow: hidden;
@@ -540,8 +542,23 @@ color: #999;
     display: table-cell;
     vertical-align: middle;
     position: absolute;
-    left: 50px;
+    left: 15px;
     top: 200px;
+    line-height: 64px;
+    font-size: 18px;
+}
+.HK-title-2{
+    background: rgba(0,0,0,.7);
+    width: 80px;
+    height: 64px;
+    overflow: hidden;
+    color: #FFF;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    left: 15px;
+    top: 520px;
     line-height: 64px;
     font-size: 18px;
 }
@@ -598,6 +615,8 @@ color: #999;
 .ljq{
     margin-top: 10px;
     overflow: hidden;
+    width: 1230px;
+    overflow: hidden;
 }
 .ljq img{
     margin-left: -165px;
@@ -616,10 +635,25 @@ color: #999;
     font-weight: 100;
     font-family: 'Microsoft YaHei',SimSun,sans-serif,'\65b9\6b63\5170\4ead\9ed1';
 }
+
+.gues-like h2{
+    color: #666;
+    text-align: center;
+    height: 43px;
+    font-weight: 100;
+    font-size: 100%;
+    line-height: 4px;
+}
+.text-ctn{
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
 .gues-like img{
-    width: 20px;
-    height: 21.6px;
-    margin-top: 2px;
+    width: auto;
+    height: 21.5px;
+    vertical-align: middle;
 }
 .last-box{
     width: 1230px;
@@ -628,11 +662,12 @@ color: #999;
     font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
 }
 .last-box li{
-    width: 239px;
-    height: 319px;
+    width: 237px;
+    height: 317px;
     position: relative;
     float: left;
     background-color: white;
+    border: 1px solid white;
 }
 .last-box li:hover{
     border: 1px solid #FF0036;

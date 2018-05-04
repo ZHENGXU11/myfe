@@ -91,6 +91,34 @@
 .slide-box{
     position: relative;
 }
+.btn-box{
+    float: left;
+    color: #999;
+    font-size: 12px;
+    display: block;
+    position: relative;
+    top: 500px;
+    left: 700px;
+    margin: -40px auto 0;
+    text-align: center;
+    z-index: 100;
+}
+.btn-box li.active{
+    background: #fff;
+    opacity: .6;
+}
+.btn-box li{
+    background: #000;
+    width: 25px;
+    height: 5px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: .3;
+}
+
+
 .slide-item{
     position: absolute;
     left: 0;
@@ -126,6 +154,7 @@
     display: block;
 }
 /* category*/
+
 .category-box{
     width: 200px;
     position: relative;
@@ -284,6 +313,7 @@ color: #999;
     left: 0;
     top: 0;
     display: none;
+
 }
 .b-list-word{
     color: #fff;

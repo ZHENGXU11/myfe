@@ -142,22 +142,24 @@
             <a href="" class="slide-item-link">
                 <img src="../images/轮播图4.jpg" alt="">
             </a>
-            <div class="slide-item slide-item5">
-                <a href="" class="slide-item-link">
-                    <img src="../images/轮播图5.webp" alt="">
-                </a>
-
-            </div>
         </div>
-        <div class="slide-item slide-item6">
+        <div class="slide-item slide-item5">
             <a href="" class="slide-item-link">
-                <img src="../images/轮播图6.webp" alt="">
+                <img src="../images/轮播图5.webp" alt="">
             </a>
 
         </div>
+
     </div>
+    <ul class="btn-box">
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    </ul>
     <div class="category-type">
-        <div class="wrapper">
+        <div class="wrapper category">
             <div class="category-box">
                 <h3 class="category-title"><i class="iconfont icon-shouji nav-icon"></i>商品分类</h3>
                 <ul class="category-list">
@@ -951,7 +953,8 @@
         <div class="end"></div>
     </div>
 
-    <script>
+    <script src="../BOM/Dom/jslib.js">
+
         var oMartBtns=document.getElementsByClassName('mart-btns')[0];
         var oBtns=oMartBtns.getElementsByTagName('span');
         var oMartContent=document.getElementsByClassName('mart-content')[0];
@@ -971,6 +974,42 @@
 
 
         }
+
+
+
+        var oBtnBox=document.getElementById('btn-box');
+        var aBtn=oBtnBox.getElementsByTagName('li');
+        var oImgBox=document.getElementById('slide-box');
+        var aImg=oImgBox.getElementsByTagName('img');
+
+        for (var i=0;i<aBtn.length;i++){
+            aBtn[i].index=i;
+            aBtn[i].onclick=function () {
+                change(this.index);
+                count=this.index;
+
+            }
+        };
+
+
+
+
+
+
+
+
+
+        // 滚动定时器
+        function run() {
+            timer=setInterval(function () {
+                oNext.onclick();
+
+            },3000);
+        }
+
+
+
+
     </script>
 
 
